@@ -1,0 +1,15 @@
+# General Conclusion {.unnumbered}
+
+This {{INTERNSHIP_DURATION}} internship, focused on developing
+{{PROJECT_NAME_DISPLAY}}, ...
+
+<!-- TODO: Write 4 paragraphs summarizing the entire report:
+1. Restate the problem and the project.
+2. Summarize the approach taken.
+3. Summarize the results and what was learned.
+4. Conclude on the value delivered and a mindset takeaway.
+-->
+
+It reinforced a mindset that will benefit any future software engineering
+work: software expands what a team can build, but engineering discipline decides
+whether what is built can be trusted.

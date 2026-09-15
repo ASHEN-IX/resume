@@ -1,0 +1,32 @@
+# Introduction {.unnumbered}
+
+## Acknowledgements {.unnumbered}
+
+{{ACKNOWLEDGEMENT_TEXT}}
+
+<!-- TODO: If you have organization/program logos, uncomment the two lines
+below and place the PNG files in `./assets/logos/`. Otherwise delete them.
+
+![{{PROGRAM_NAME}} logo](./assets/logos/{{PROGRAM_NAME}}.png){width=2cm}
+![{{ORGANIZATION_NAME}} logo](./assets/logos/{{ORGANIZATION_NAME}}.png){width=2cm}
+
+-->
+
+## Introduction {.unnumbered}
+
+This internship report presents the project **{{PROJECT_NAME_DISPLAY}}**,
+carried out at {{ORGANIZATION_NAME}} as part of the {{PROGRAM_NAME}}
+program, during the period from {{INTERNSHIP_START}} to
+{{INTERNSHIP_END}}.
+
+The report is structured into four chapters:
+
+- **Chapter 1, {{CHAPTER_TITLES.0}}** (@sec-project-presentation) — gives the
+  context of the project and the motivation.
+- **Chapter 2, {{CHAPTER_TITLES.1}}** (@sec-analysis) — analyzes the
+  requirements.
+- **Chapter 3, {{CHAPTER_TITLES.2}}** (@sec-design) — presents the design.
+- **Chapter 4, {{CHAPTER_TITLES.3}}** (@sec-implementation) — details the
+  implementation and results.
+
+\printacronyms

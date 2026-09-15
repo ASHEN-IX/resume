@@ -1,0 +1,22 @@
+# Platform Screenshots {.unnumbered}
+
+<!-- TODO: Replace each figure below with a real screenshot of the running
+platform. Keep one figure per line with a caption:
+`![Caption](./assets/screenshots/<name>.png){width=75%}`.
+Some sections below are optional — keep the ones you have, remove the rest.
+Each PNG filename should match a real file kept on GitHub so the repo is
+self-contained. -->
+
+## Module A
+
+![Caption describing what this screenshot shows](./assets/screenshots/screenshot-a-1.png){width=75%}
+
+![Second view](./assets/screenshots/screenshot-a-2.png){width=75%}
+
+## Module B
+
+![Caption for module B](./assets/screenshots/screenshot-b-1.png){width=75%}
+
+## Module C
+
+![Caption for module C](./assets/screenshots/screenshot-c-1.png){width=75%}

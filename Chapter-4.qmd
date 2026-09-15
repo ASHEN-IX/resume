@@ -1,0 +1,85 @@
+# {{CHAPTER_TITLES.3}} {#sec-implementation}
+
+## Introduction {.unnumbered}
+
+This chapter details the implementation of {{PROJECT_NAME_DISPLAY}}. It begins
+by presenting the development environment, then explains, module by module,
+how each feature was implemented. After that it examines the results achieved
+and outlines possible future work.
+
+<!-- TODO: Re-write for your project, listing your actual modules. -->
+
+## Development Environment & Tools
+
+The project repository, `{{REPO_NAME}}`, is hosted on {{REPO_HOST}} at
+{{REPO_URL}}. It is a {{LANGUAGE}} project. {{DEPLOYMENT_METHOD}} orchestrates
+the stack:
+
+<!-- TODO: list the services in your stack (web app, database, cache, message
+broker, proxy, workers). Mention development workflow:
+
+- virtual environment and dev server commands
+- test command (e.g., `pytest`)
+- merge-request flow gated by {{CI_SYSTEM}}
+- sample of the tooling shown in @fig-...
+-->
+
+## Implementation of Core Features
+
+### Module 1
+
+<!-- TODO: describe feature 1:
+- files involved
+- key pipeline/steps (numbered list)
+- the main algorithm or flow
+- a short code snippet (inline or fenced)
+-->
+
+### Module 2
+
+<!-- TODO: describe feature 2, keeping the patterns from Module 1. -->
+
+### Module 3
+
+<!-- TODO: describe feature 3. -->
+
+### Evaluation and confidence
+
+| {{FIELD}}               | {{TYPICAL_CONFIDENCE}} | {{POLICY}}              |
+| ------------------------ | ---------------------- | ----------------------- |
+| `short_field`            | ~90-95%                | —                       |
+| `longer_field_` `\newline`{=latex} `name` | ~85% | —                       |
+
+: Confidence guidelines {#tbl-confidence-guidelines tbl-colwidths="[34,28,38]"}
+
+<!-- TODO: If your project produces scored/confidence outputs, keep a table
+like this; otherwise remove it. Long field tokens can be split with
+`\newline`{=latex} at the `_` boundary. -->
+
+## Results & Impact
+
+By the end of the internship, {{PROJECT_NAME_DISPLAY}} had a complete core:
+
+<!-- TODO: summarize the achieved results, metrics, and the impact on the
+organization (e.g., time saved, processes automated). -->
+
+## Future Work
+
+### Feature X
+
+<!-- TODO: describe a planned feature. -->
+
+### Refinements
+
+<!-- TODO: describe planned refinements to the current implementation. -->
+
+### Hardening
+
+<!-- TODO: describe security/reliability improvements. -->
+
+## Conclusion {.unnumbered}
+
+This chapter described the implementation of {{PROJECT_NAME_DISPLAY}}, the
+results achieved, and future improvements.
+
+<!-- TODO: Keep 2-4 sentences summarizing Chapter 4. -->

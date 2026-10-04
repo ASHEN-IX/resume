@@ -1,0 +1,18 @@
+\usepackage{titlesec}
+\usepackage{xcolor}
+\definecolor{navy}{HTML}{1A2E4A}
+\definecolor{rulegray}{HTML}{CBD5E1}
+\pagestyle{empty}
+\titleformat{\section}{\large\bfseries\color{navy}}{}{0em}{}[\color{rulegray}\titlerule]
+\titleformat{\subsection}{\normalsize\bfseries\color{navy}}{}{0em}{}
+\titlespacing*{\section}{0pt}{9pt}{4pt}
+\titlespacing*{\subsection}{0pt}{6pt}{2pt}
+
+\usepackage{needspace}
+\AddToHook{cmd/subsubsection/before}{\Needspace{6\baselineskip}}
+
+\titleformat{\subsubsection}{\normalsize\bfseries\color{navy}}{}{0em}{}
+\titlespacing*{\subsubsection}{0pt}{5pt}{2pt}
+\setlength{\parskip}{3pt plus 1pt}
+\AddToHook{cmd/subsection/before}{\Needspace{4\baselineskip}}
+

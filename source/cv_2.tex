@@ -1,0 +1,250 @@
+%% Mohamed Aziz Kammoun — Resume
+%% Modern single-page LaTeX resume
+%% Compiler: pdflatex or xelatex
+
+\documentclass[10pt, a4paper]{article}
+
+%% ── Packages ─────────────────────────────────────────────────────────────────
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[left=1.6cm, right=1.6cm, top=1.4cm, bottom=1.4cm]{geometry}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{microtype}
+\usepackage{fontawesome5}   % icons — if unavailable, replace \fa... with plain text
+
+%% ── Colors ───────────────────────────────────────────────────────────────────
+\definecolor{navy}{HTML}{1A2E4A}
+\definecolor{accent}{HTML}{2563EB}
+\definecolor{muted}{HTML}{64748B}
+\definecolor{rule}{HTML}{CBD5E1}
+\definecolor{lightbg}{HTML}{EFF6FF}
+
+%% ── Hyperlink style ──────────────────────────────────────────────────────────
+\hypersetup{
+  colorlinks=true,
+  urlcolor=accent,
+  linkcolor=accent
+}
+
+%% ── Typography ───────────────────────────────────────────────────────────────
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+%% ── Section style ────────────────────────────────────────────────────────────
+%% Uppercase label + full-width accent rule beneath
+\titleformat{\section}
+  {\large\bfseries\color{navy}\uppercase}
+  {}{0em}{}
+  [\vspace{1pt}\color{rule}\hrule height 0.6pt\vspace{4pt}]
+
+\titlespacing{\section}{0pt}{10pt}{4pt}
+
+%% ── Bullet list style ────────────────────────────────────────────────────────
+\setlist[itemize]{
+  leftmargin=1.4em,
+  itemsep=1pt,
+  topsep=2pt,
+  parsep=0pt,
+  label={\small\textcolor{accent}{▪}}
+}
+
+%% ── Helper macros ────────────────────────────────────────────────────────────
+
+% Job entry: {Title}{Company, Location}{Date}
+\newcommand{\jobentry}[3]{%
+  \textbf{\color{navy}#1} \hfill \textit{\color{muted}\small #3}\\
+  \textit{\color{muted}\small #2}%
+}
+
+% Project entry: {Emoji Title}{URL}{Focus tag}
+\newcommand{\projectentry}[3]{%
+  \textbf{\color{navy}#1}%
+  \ifx&#2&\else
+    \enspace\href{#2}{\small\color{accent}→ github}%
+  \fi
+  \hfill \texttt{\footnotesize\color{muted}#3}%
+}
+
+% Skill row in the table
+\newcommand{\skillrow}[2]{%
+  \textbf{\small\color{navy}#1} & {\small\color{black}#2}\\[2pt]%
+}
+
+%% ═══════════════════════════════════════════════════════════════════════════════
+\begin{document}
+
+%% ── HEADER ───────────────────────────────────────────────────────────────────
+\begin{center}
+  {\LARGE\bfseries\color{navy} Mohamed Aziz Kammoun}\\[4pt]
+  {\normalsize\color{muted}
+    Web Developer \enspace·\enspace AI System Developer}\\[5pt]
+  {\small
+    \textcolor{muted}{\faMapMarker*\enspace Tunisia}
+    \quad
+    \textcolor{muted}{\faEnvelope\enspace kammoun.mohamedaziz@esprit.tn}
+    \quad
+    \href{https://github.com/ashen-ix}{\faGithub\enspace github.com/ashen-ix}
+  }
+\end{center}
+
+\vspace{2pt}
+{\color{accent}\hrule height 1.2pt}
+\vspace{8pt}
+
+%% ── SUMMARY ──────────────────────────────────────────────────────────────────
+\section{Professional Summary}
+
+Web developer and AI system developer with hands-on experience building intelligent web
+applications, automation systems, and gamified learning platforms. Skilled across the complete
+development lifecycle — from scalable backend architecture with NestJS, expresJS, Django and AI-powered pipelines
+to animated, immersive frontend experiences with Next.js and React. Passionate about combining
+AI and real-world impact.
+
+\vspace{2pt}
+
+%% ── TECHNICAL SKILLS ─────────────────────────────────────────────────────────
+\section{Technical Skills}
+
+\begin{tabularx}{\textwidth}{@{} >{\raggedright\arraybackslash}p{3.0cm} X @{}}
+  \skillrow{Languages}{TypeScript \enspace·\enspace JavaScript \enspace·\enspace Python \enspace·\enspace Java \enspace·\enspace SQL}
+  \skillrow{Frontend}{Next.js \enspace·\enspace React \enspace·\enspace HTML5 \enspace·\enspace CSS3 \enspace·\enspace Tailwind CSS \enspace·\enspace UI/UX Design}
+  \skillrow{Backend}{NestJS \enspace·\enspace Node.js \enspace·\enspace Django \enspace·\enspace REST APIs \enspace·\enspace Java (Native)}
+  \skillrow{AI / ML}{NLP \enspace·\enspace Classification Models \enspace·\enspace Model Training \& Evaluation \enspace·\enspace AI Automation \enspace·\enspace AI System Design}
+  \skillrow{Data \& Scraping}{Web Scraping \enspace·\enspace Data Preprocessing \enspace·\enspace Feature Engineering \enspace·\enspace Markdown Parsing}
+  \skillrow{DevOps \& Tools}{Git \enspace·\enspace GitHub Actions (CI/CD) \enspace·\enspace Docker \enspace·\enspace Linux (Ubuntu)}
+  \skillrow{Other}{Gamification Systems \enspace·\enspace System Design \enspace·\enspace Scalable Architecture}
+  \skillrow{Hardware \& Embedded}{ESP32 \enspace·\enspace Arduino \enspace·\enspace Raspberry Pi \enspace·\enspace RFID Systems \enspace·\enspace C/C++}
+\end{tabularx}
+
+%% ── PROJECTS ─────────────────────────────────────────────────────────────────
+\section{Projects}
+
+\projectentry{MindFlow — smart learning ecosystem}{}{Web Dev · AI · react · expressJS, raspberry pi 5, }
+\begin{itemize}
+  \item Built a full learning ecosystem with a team of 7 developers to help students learn using robotic study companian and gamification
+  \item Designed strong microservice architecture, NoSQL database, and REST API layer
+\end{itemize}
+
+\vspace{3pt}
+\projectentry{Digestible — AI Content Simplification Tool}{https://github.com/ASHEN-IX/Digestible}{NLP · Automation · Productivity}
+\begin{itemize}
+  \item Developed an NLP-powered system transforming complex technical content into readable structured output
+  \item Implemented text summarization, markdown parsing, and structured output generation pipelines
+\end{itemize}
+
+\vspace{3pt}
+\projectentry{Hikma Learn — Gamified Learning Platform}{https://github.com/ashen-ix/hikma-learn}{EdTech · Gamification · UX}
+\begin{itemize}
+  \item Built an immersive edtech platform with rank systems, adaptive rewards, and anime-inspired animated UI, that can also help students with disabilities.
+  \item Engineered scroll-driven animations, gamification logic, and responsive full-stack architecture
+\end{itemize}
+
+\vspace{3pt}
+\projectentry{RepoRadar — GitHub Intelligence Tool}{https://github.com/ASHEN-IX/RepoRadar}{Web Scraping · Developer Tools}
+\begin{itemize}
+  \item Built a repository analysis tool using GitHub APIs and web scraping to surface developer insights
+\end{itemize}
+
+\vspace{3pt}
+\projectentry{Code Review Buddy — AI Developer Assistant}{https://github.com/ASHEN-IX/code-review-buddy}{AI Automation · Productivity}
+\begin{itemize}
+  \item Designed an AI-powered code review tool that analyzes submissions, suggests improvements, and automates feedback
+\end{itemize}
+
+\vspace{3pt}
+\projectentry{SmartBusRFID — Smart Transportation System}{https://github.com/ASHEN-IX/SmartBusRFID}{Embedded · Real-world Systems}
+\begin{itemize}
+  \item Developed an RFID-based bus tracking system for real-time user identification and fleet monitoring payment via rfid card.
+\end{itemize}
+
+\vspace{3pt}
+\projectentry{e-Krini — Full-Stack E-Commerce Platform}{https://github.com/ASHEN-IX/e-krini}{Full-Stack · System Architecture}
+\begin{itemize}
+  \item Built a complete web platform with frontend/backend integration, database management, and user flows for car renting using easy UI
+\end{itemize}
+
+\vspace{3pt}
+\projectentry{Nova Sandbox --- Banking Simulation API}{https://github.com/ASHEN-IX/nova-sandbox}{TypeScript · Fastify · Prisma · Docker}
+\begin{itemize}
+  \item Built a production-ready banking simulation API for fintech developers to test payment flows without real banking dependencies
+  \item Implemented advanced banking engines: fraud detection (velocity \& geolocation patterns), risk scoring, loan lifecycle management, and investment portfolio simulation
+\end{itemize}
+
+%% ── TECHNICAL EXPERIENCE ─────────────────────────────────────────────────────
+\section{Technical Experience}
+
+\jobentry{Web Developer Intern}{ESPRIT TECH, Tunisia}{July 2025 -- August 2025}
+\begin{itemize}
+  \item Developed \textbf{Hikma Learn}, a gamified AI-powered learning platform, as the core internship project
+  \item Built the frontend with React and scroll-driven animations (anime-inspired dark UI with glassmorphism)
+  \item Implemented gamification logic including rank systems, adaptive rewards, and progress tracking
+  \item Integrated AI-assisted learning features and delivered a production-ready full-stack application
+\end{itemize}
+
+\vspace{4pt}
+\jobentry{Software Developer --- University Projects}{Independent \& Team-based Work, Tunisia}{2024 -- Present}
+\begin{itemize}
+  \item Led and contributed to team-based development across 6+ developer projects with modular architecture
+  \item Designed distributed system components, REST APIs, and full-stack applications end-to-end
+  \item Built AI-powered systems integrating NLP, classification models, and automation pipelines
+  \item Delivered production-grade UIs with strong animation, gamification, and accessibility focus
+\end{itemize}
+
+%% ── NON-TECHNICAL EXPERIENCE ─────────────────────────────────────────────────
+\section{Non-Technical Experience}
+
+\jobentry{Media Manager --- RAS Chapter \& CS Chapter}{IEEE ESPRIT Student Branch, Tunisia}{2 Mandates}
+\begin{itemize}
+  \item Served two consecutive mandates as Media Manager for the IEEE Robotics \& Automation Society (RAS) Chapter and the Computer Society (CS) Chapter
+  \item Managed digital communication, visual content production, and social media presence for both chapters
+  \item Coordinated media campaigns for technical events, workshops, and community outreach initiatives
+\end{itemize}
+
+\vspace{4pt}
+\jobentry{Volunteer}{IEEE ESPRIT Student Branch, Tunisia}{Ongoing}
+\begin{itemize}
+  \item Active volunteer contributing to event organization and community engagement across student branch activities
+\end{itemize}
+
+%% ── EDUCATION ────────────────────────────────────────────────────────────────
+\section{Education}
+
+\jobentry{Engineering Degree in Computer Science}{ESPRIT --- Ecole Superieure Privee d'Ingenierie et de Technologies, Tunisia}{2024 -- Present}
+
+\vspace{4pt}
+\jobentry{Pre-Engineering Cycle}{IPEIT --- Institut Preparatoire aux Etudes d'Ingenieurs de Tunis, Tunisia}{2022 -- 2024}
+
+\vspace{4pt}
+\jobentry{Baccalaureat --- Sciences de l'Informatique}{Tunisia}{2021}
+
+%% ── STRENGTHS ────────────────────────────────────────────────────────────────
+\section{Key Strengths}
+
+\begin{tabularx}{\textwidth}{@{} X X @{}}
+  \textcolor{accent}{▪}\enspace AI system design \& NLP pipeline development &
+  \textcolor{accent}{▪}\enspace Creative and immersive UI/UX design \\[2pt]
+  \textcolor{accent}{▪}\enspace Strong system design \& architecture thinking &
+  \textcolor{accent}{▪}\enspace Fast execution on complex, multi-layer projects \\[2pt]
+  \textcolor{accent}{▪}\enspace Full-stack web development (Next.js, NestJS) &
+
+\end{tabularx}
+
+\vspace{6pt}
+{\color{rule}\hrule height 0.5pt}
+\vspace{3pt}
+\begin{center}
+  {\footnotesize\color{muted}
+    Mohamed Aziz Kammoun \enspace·\enspace Web Developer \& AI System Developer \enspace·\enspace
+    \href{https://github.com/ashen-ix}{github.com/ashen-ix}
+  }
+\end{center}
+
+\end{document}

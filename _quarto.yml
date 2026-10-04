@@ -1,62 +1,27 @@
 project:
-  type: book
-
-book:
-  title: "{{REPORT_TITLE}}"
-  author:
-    - {{REPORT_AUTHOR}}
-  date: today
-  date-format: "MMMM D, YYYY"
-  chapters:
+  type: default
+  output-dir: _output
+  render:
     - index.qmd
-    - Chapter-1.qmd
-    - Chapter-2.qmd
-    - Chapter-3.qmd
-    - Chapter-4.qmd
-    - conclusion.qmd
-    - references.qmd
-  appendices:
-    - Code.qmd
-    - Screenshots.qmd
-  subtitle: "{{REPORT_SUBTITLE}}"
-  type: report
-
-bibliography: references.bib
-csl: ./ieee-with-url.csl
-
-filters:
-  - acronyms
-
-
-acronyms:
-  loa_header_classes:
-    - unnumbered
-  fromfile: ./acronyms.yml
-  insert_links: false
-  insert_loa: false
-
+lang: en
+pagetitle: "Mohamed Aziz Kammoun — Resume"
+author-meta: "Mohamed Aziz Kammoun"
 format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: false
+    embed-resources: true
+    output-file: resume.html
   pdf:
-    number-sections: true
-    documentclass: scrreprt
-    indent: true
-    code-overflow: wrap
-    link-citations: true
-    mainfont: "Latin Modern Roman"
-    sansfont: "Latin Modern Roman"
-    fontsize: 13pt
-    header-includes:
-      - \usepackage{fancyhdr}
-      - \pagestyle{fancy}
-      - \fancyhead[L]{\nouppercase}
-      - \usepackage{wallpaper}
-      - \usepackage{graphicx}
-      - \usepackage{fvextra}
-      - \usepackage{eso-pic}
-      - \usepackage{tikz}
-      - \usepackage{etoolbox}
-      - \AtBeginEnvironment{longtable}{\hyphenpenalty=10000\exhyphenpenalty=10000}
-      - \AtEndEnvironment{longtable}{\hyphenpenalty=50\exhyphenpenalty=50}
-      - \renewcommand{\arraystretch}{1.2}
-      - \DefineVerbatimEnvironment{Highlighting}{Verbatim}{breaklines=true,breakanywhere=true,commandchars=\\\{\}}
-      - \DefineVerbatimEnvironment{OutputCode}{Verbatim}{breaklines=true,breakanywhere=true,commandchars=\\\{\}}
+    documentclass: article
+    pdf-engine: lualatex
+    papersize: a4
+    fontsize: 10pt
+    geometry:
+      - margin=1.4cm
+    colorlinks: true
+    toc: false
+    number-sections: false
+    include-in-header: resume-header.tex
+    output-file: resume.pdf

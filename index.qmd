@@ -1,32 +1,148 @@
-# Introduction {.unnumbered}
+# Mohamed Aziz Kammoun
 
-## Acknowledgements {.unnumbered}
+**Web Developer · AI System Developer**
 
-{{ACKNOWLEDGEMENT_TEXT}}
+Tunisia · [kammoun.mohamedaziz@esprit.tn](mailto:kammoun.mohamedaziz@esprit.tn) · [github.com/ashen-ix](https://github.com/ashen-ix)
 
-<!-- TODO: If you have organization/program logos, uncomment the two lines
-below and place the PNG files in `./assets/logos/`. Otherwise delete them.
+## Professional Summary
 
-![{{PROGRAM_NAME}} logo](./assets/logos/{{PROGRAM_NAME}}.png){width=2cm}
-![{{ORGANIZATION_NAME}} logo](./assets/logos/{{ORGANIZATION_NAME}}.png){width=2cm}
+Web developer and AI system developer with hands-on experience building intelligent web
+applications, automation systems, and gamified learning platforms. Skilled across the complete
+development lifecycle — from scalable backend architecture with NestJS, Express.js, Django and AI-powered pipelines
+to animated, immersive frontend experiences with Next.js and React. Passionate about combining
+AI and real-world impact.
 
--->
+## Technical Skills
 
-## Introduction {.unnumbered}
+- **Languages:** TypeScript  ·  JavaScript  ·  Python  ·  Java  ·  SQL
+- **Frontend:** Next.js  ·  React  ·  HTML5  ·  CSS3  ·  Tailwind CSS  ·  UI/UX Design
+- **Backend:** NestJS  ·  Node.js  ·  Django  ·  REST APIs  ·  Java (Native)
+- **AI / ML:** NLP  ·  Classification Models  ·  Model Training & Evaluation  ·  AI Automation  ·  AI System Design
+- **Data & Scraping:** Web Scraping  ·  Data Preprocessing  ·  Feature Engineering  ·  Markdown Parsing
+- **DevOps & Tools:** Git  ·  GitHub Actions (CI/CD)  ·  Docker  ·  Linux (Ubuntu)
+- **Other:** Gamification Systems  ·  System Design  ·  Scalable Architecture
+- **Hardware & Embedded:** ESP32  ·  Arduino  ·  Raspberry Pi  ·  RFID Systems  ·  C/C++
 
-This internship report presents the project **{{PROJECT_NAME_DISPLAY}}**,
-carried out at {{ORGANIZATION_NAME}} as part of the {{PROGRAM_NAME}}
-program, during the period from {{INTERNSHIP_START}} to
-{{INTERNSHIP_END}}.
+## Projects
 
-The report is structured into four chapters:
+### [MindFlow — Multi-Agent AI Study Partner](https://github.com/study-partner-esprit/study-partner-ai)
 
-- **Chapter 1, {{CHAPTER_TITLES.0}}** (@sec-project-presentation) — gives the
-  context of the project and the motivation.
-- **Chapter 2, {{CHAPTER_TITLES.1}}** (@sec-analysis) — analyzes the
-  requirements.
-- **Chapter 3, {{CHAPTER_TITLES.2}}** (@sec-design) — presents the design.
-- **Chapter 4, {{CHAPTER_TITLES.3}}** (@sec-implementation) — details the
-  implementation and results.
+*React · Express.js · FastAPI · MongoDB · RabbitMQ · RAG*
 
-\printacronyms
+- Led a team of seven developers to build a study-assistance ecosystem, combining a React interface, eight Node.js microservices, and Python AI agents.
+- Integrated course ingestion and retrieval-augmented study planning with scheduling, coaching, evaluation, and camera-based focus and fatigue tracking.
+
+### [FIN-SHIELD — Fiscal Review & Investigation Platform](https://github.com/ASHEN-IX/Fin-shield)
+
+*Next.js · TypeScript · FastAPI · PostgreSQL · LLM tool use · RAG*
+
+- Built a synthetic-data fiscal review platform with explainable risk signals, case workflows, analyst feedback, and role-based access.
+- Developed a separate investigation agent with API tools, what-if analysis, document retrieval, and citation verification to produce evidence-grounded drafts for human review.
+
+### IEEE Tunisia Partnership Hub — Membership & Sponsorship Platform
+
+*Next.js · NestJS · TypeScript · Prisma · PostgreSQL · Better Auth*
+
+- Built a full-stack platform for IEEE Tunisia Unit reviews, memberships, invitations, officer positions, partner directories, sponsorship agreements, and support tickets.
+- Implemented transactional authorization, audit records, a PostgreSQL email outbox, and a typed API client backed by shared Zod contracts.
+
+### Hackership-AI — Internship AI Orchestration
+
+*Python · Flask · LiteLLM · Pydantic · RabbitMQ · Redis*
+
+- Led a team of developers to build AI workflows for feature decomposition, dependency-ordered task generation, mission grouping, and candidate resume extraction.
+- Combined multi-provider LLM routing with structured-output validation, deterministic dependency checks, and asynchronous workers with retries and dead-letter handling.
+
+### [HealFlow — Data Contract Validation SDK](https://github.com/ASHEN-IX/healflow)
+
+*Python · Pydantic · Pandas · pytest · mypy*
+
+- Developed a typed Python SDK that validates Pandas data against versioned contracts before it enters downstream pipeline stages.
+- Implemented required-column, type, nullability, range, pattern, and uniqueness checks with structured findings, severity levels, and execution metadata.
+
+### [Digestible — AI Content Simplification Tool](https://github.com/ASHEN-IX/Digestible)
+
+*NLP · Automation · Productivity*
+
+- Developed an NLP-powered system transforming complex technical content into readable structured output
+- Implemented text summarization, markdown parsing, and structured output generation pipelines
+
+### [MedAI Nexus — Medical Analysis Prototype](https://github.com/ASHEN-IX/medical-ai)
+
+*Next.js · NestJS · FastAPI · PostgreSQL · Prisma · scikit-learn*
+
+- Led a team of developers to build a medical analysis prototype spanning a Next.js interface, NestJS API, and Python AI service.
+- Integrated diabetes, autism survey, and kidney disease prediction models with structured intake forms, AI gateway routing, and confidence-scored results.
+
+### [SmartBusRFID — Smart Transportation System](https://github.com/ASHEN-IX/SmartBusRFID)
+
+*Embedded · Real-world Systems*
+
+- Developed an RFID-based bus tracking system for real-time user identification and fleet monitoring, and payments via RFID card.
+
+### [e-Krini — Full-Stack Car Rental Platform](https://github.com/ASHEN-IX/e-krini)
+
+*Full-Stack · System Architecture*
+
+- Built a complete web platform with frontend/backend integration, database management, and car rental user flows with a simple interface
+
+## Internships
+
+### Web Developer Intern — Hikma Learn
+
+ESPRIT TECH, Tunisia · July 2025 – August 2025
+
+- Developed **Hikma Learn**, a gamified AI-powered learning platform, as the core internship project.
+- Built a React frontend with scroll-driven animations, rank systems, adaptive rewards, progress tracking, and AI-assisted learning features.
+
+### Software Development Intern — MindFlow
+
+ESPRIT TECH, Tunisia · July 2026 – August 2026
+
+- Led a team of seven developers to build MindFlow, a multi-agent AI study-assistance platform.
+- Coordinated development across the React frontend, Express.js microservices, and Python AI service for study planning, coaching, and progress evaluation.
+
+### Software Development Intern — Hackership
+
+Felcloud · July 2026 – August 2026
+
+- Led a developer team building Hackership's internship-management AI with Flask, LiteLLM, and Pydantic, covering task decomposition, mission generation, and resume extraction.
+- Implemented taxonomy-based skill extraction and weighted matching scores, with Redis caching for repeated matching requests.
+
+## Leadership & Volunteering
+
+### Webmaster — RAS Chapter & CS Chapter
+
+IEEE ESPRIT Student Branch, Tunisia · 2 Mandates
+
+- Served two consecutive mandates as Webmaster for the IEEE Robotics & Automation Society (RAS) Chapter and the Computer Society (CS) Chapter
+- Managed digital communication, visual content production, and social media presence for both chapters
+- Coordinated media campaigns for technical events, workshops, and community outreach initiatives
+
+### Volunteer
+
+IEEE ESPRIT Student Branch, Tunisia · Ongoing
+
+- Active volunteer contributing to event organization and community engagement across student branch activities
+
+## Education
+
+### Engineering Degree in Computer Science
+
+ESPRIT — Ecole Superieure Privee d'Ingenierie et de Technologies, Tunisia · 2024 – Present
+
+### Pre-Engineering Cycle
+
+IPEIT — Institut Preparatoire aux Etudes d'Ingenieurs de Tunis, Tunisia · 2022 – 2024
+
+### Baccalaureat — Sciences de l'Informatique
+
+Tunisia · 2021
+
+## Key Strengths
+
+- AI system design & NLP pipeline development
+- Creative and immersive UI/UX design
+- System design & architecture
+- Fast execution on complex, multi-layer projects
+- Full-stack web development (Next.js, NestJS)

@@ -1,7 +1,0 @@
-/.quarto/
-/_output/
-**/*.quarto_ipynb
-*.aux
-*.log
-*.out
-*.synctex.gz
